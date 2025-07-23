@@ -1,8 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 .nav-contenar {
   display: flex;
   justify-content: space-between;
   margin: 20px auto;
-  max-width: 1140px;
+  max-width: 1100px;
   height: 75px;
 }
 .nav-item ul {
@@ -13,4 +17,21 @@
   margin: 0 20px;
   text-decoration: none;
   color: #8987a1;
+}
+.flower-contenar {
+  max-width: 1100px;
+  display: flex;
+  margin: 120px auto;
+  justify-content: space-between;
+  align-items: end;
+}
+.flower-titel h1 {
+  font-family: "Noto Serif", serif;
+  font-size: 65px;
+  font-weight: bold;
+}
+.flower-titel h1 p {
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  color: #000000;
 }
