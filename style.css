@@ -227,6 +227,7 @@
 .join-container input {
   width: 600px;
   height: 45px;
+  padding-left: 20px;
 }
 .btn2 {
   width: 150px;
@@ -269,12 +270,11 @@ footer {
   .deal-banner3,
   .deal-banner,
   .deal-banner2,
-  .deal-banner3 h3,
-  .deal-banner3 p {
+  .join-container {
     width: 100%;
   }
   .deal-banner3 {
-    /* max-width: 367px; */
+    max-width: 367px;
   }
   .flower-container {
     flex-direction: column-reverse;
@@ -291,5 +291,12 @@ footer {
   }
   footer {
     flex-direction: column;
+  }
+  .join-container input {
+    max-width: 60%;
+  }
+  .lover-content ul {
+    padding-left: 0;
+    margin-left: 0;
   }
 }
