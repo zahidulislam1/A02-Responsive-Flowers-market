@@ -56,7 +56,7 @@
   font-weight: 400;
 }
 .card-container {
-  max-width: 1100px;
+  width: 100%;
   margin: 0 auto;
   margin-top: 50px;
   display: grid;
@@ -64,8 +64,8 @@
   gap: 20px;
 }
 .card {
-  max-width: 270px;
-  max-height: 485px;
+  /* width: 270px; */
+  height: 485px;
 }
 .card p {
   text-align: center;
@@ -162,7 +162,7 @@
 .deal-banner2 {
   background-image: url(./assets/deal-ana.png);
   background-repeat: no-repeat;
-  width: 367px;
+  max-width: 367px;
   height: 201px;
   border-radius: 10px;
   color: #ffffff;
@@ -266,15 +266,9 @@ footer {
   .none {
     display: none;
   }
-  .nav-container,
-  .deal-banner3,
-  .deal-banner,
-  .deal-banner2,
-  .join-container {
-    width: 100%;
-  }
+
   .deal-banner3 {
-    max-width: 367px;
+    max-width: 450px;
   }
   .flower-container {
     flex-direction: column-reverse;
@@ -298,5 +292,9 @@ footer {
   .lover-content ul {
     padding-left: 0;
     margin-left: 0;
+    max-width: 80%;
+  }
+  .card-container {
+    width: 100%;
   }
 }
