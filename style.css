@@ -2,7 +2,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-.nav-contenar {
+.nav-container {
   display: flex;
   justify-content: space-between;
   margin: 20px auto;
@@ -18,24 +18,24 @@
   text-decoration: none;
   color: #8987a1;
 }
-.flower-contenar {
+.flower-container {
   max-width: 1100px;
   display: flex;
   margin: 120px auto;
   justify-content: space-between;
   align-items: end;
 }
-.flower-titel h1 {
+.flower-title h1 {
   font-family: "Noto Serif", serif;
   font-size: 65px;
   font-weight: bold;
 }
-.flower-titel p {
+.flower-title p {
   font-family: "Inter", sans-serif;
   font-size: 22px;
   color: rgba(0, 0, 0, 0.5);
 }
-.plant-contenar {
+.plant-container {
   max-width: 1100px;
   margin: 0 auto;
   margin-top: 100px;
@@ -55,7 +55,7 @@
   font-size: 22px;
   font-weight: 400;
 }
-.card-contenar {
+.card-container {
   max-width: 1100px;
   margin: 0 auto;
   margin-top: 50px;
@@ -82,7 +82,7 @@
   font-weight: 500;
   font-family: "Inter", sans-serif;
 }
-.lover-contenar {
+.lover-container {
   max-width: 1100px;
   margin: 0 auto;
   margin-top: 210px;
@@ -96,39 +96,39 @@
   left: 32%;
   top: -20%;
 }
-.lover-conten {
+.lover-content {
   width: 540px;
   height: 521px;
   margin: 20px 0 20px 40px;
 }
-.lover-conten h3 {
+.lover-content h3 {
   font-family: "Noto Serif", serif;
   font-size: 50px;
   font-weight: bold;
   color: #000000;
 }
-.lover-conten ul {
+.lover-content ul {
   font-family: "Inter", sans-serif;
   font-size: 22px;
   color: rgba(0, 0, 0, 0.5);
 }
-.deal-conten {
+.deal-content {
   text-align: center;
   margin: 120px auto;
 }
-.deal-conten h2 {
+.deal-content h2 {
   font-family: "Noto Serif", serif;
   font-size: 50px;
   font-weight: bold;
   margin: 10px auto;
 }
-.deal-conten p {
+.deal-content p {
   color: rgba(0, 0, 0, 0.5);
   font-size: 22px;
   font-weight: 400;
   margin: 10px auto;
 }
-.deal-contenar {
+.deal-container {
   max-width: 1100px;
   margin: 10px auto;
   display: grid;
@@ -137,7 +137,8 @@
 }
 .deal-banner {
   background-image: url(./assets/deal-bloom.png);
-  width: 367px;
+  background-repeat: no-repeat;
+  max-width: 367px;
   height: 201px;
   border-radius: 10px;
   color: #ffffff;
@@ -160,6 +161,7 @@
 }
 .deal-banner2 {
   background-image: url(./assets/deal-ana.png);
+  background-repeat: no-repeat;
   width: 367px;
   height: 201px;
   border-radius: 10px;
@@ -183,6 +185,7 @@
 }
 .deal-banner3 {
   background-image: url(./assets/deal-zabo.png);
+  background-repeat: no-repeat;
   width: 720px;
   border-radius: 15px;
   color: #ffffff;
@@ -205,22 +208,23 @@
   text-decoration: underline;
   font-size: 28px;
 }
-.join-contenar {
+.join-container {
   background-image: url(./assets/news-letter-bg.png);
   margin-top: 120px;
   height: 533px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.join-contenar h2 {
+.join-container h2 {
   color: #ffffff;
   font-size: 50px;
   font-weight: bold;
   font-family: "Noto Serif", serif;
 }
-.join-contenar input {
+.join-container input {
   width: 600px;
   height: 45px;
 }
@@ -244,4 +248,48 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
+}
+.footer-content {
+  width: 359px;
+  height: 179px;
+}
+.footer-item a {
+  text-decoration: none;
+  color: rgb(107, 114, 128);
+  font-family: "Inter", sans-serif;
+}
+.footer-link img {
+  margin: 10px;
+}
+@media screen and (max-width: 576px) {
+  .none {
+    display: none;
+  }
+  .nav-container,
+  .deal-banner3,
+  .deal-banner,
+  .deal-banner2,
+  .deal-banner3 h3,
+  .deal-banner3 p {
+    width: 100%;
+  }
+  .deal-banner3 {
+    /* max-width: 367px; */
+  }
+  .flower-container {
+    flex-direction: column-reverse;
+  }
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .lover-container {
+    flex-direction: column;
+  }
+  .deal-container,
+  .footer-item {
+    grid-template-columns: 1fr;
+  }
+  footer {
+    flex-direction: column;
+  }
 }
